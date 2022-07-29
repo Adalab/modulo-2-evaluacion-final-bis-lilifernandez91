@@ -122,4 +122,53 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.container {
+  background-color: #fafafa;
+  min-height: 100vh;
+  width: 450px;
+  margin: auto; }
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 25px; }
+  .header .twitter-lab-section {
+    width: 290px;
+    display: flex;
+    justify-content: end;
+    margin-right: 44px; }
+    .header .twitter-lab-section .h1-header {
+      font-size: 25px;
+      position: relative;
+      bottom: 8px; }
+  .header .buttons-section {
+    width: 138px;
+    display: flex;
+    flex-direction: column; }
+    .header .buttons-section .button {
+      background-color: aquamarine;
+      color: gray;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      width: 130px; }
+    .header .buttons-section .button-1 {
+      margin-bottom: 5px; }
+
+.main {
+  margin-top: 5px; }
+  .main .div-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: aquamarine;
+    margin-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2); }
+    .main .div-main .img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 5px; }
+    .main .div-main .title-main {
+      margin-bottom: 5px; }
+
 /*# sourceMappingURL=main.css.map */
