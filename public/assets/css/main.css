@@ -164,11 +164,13 @@ table {
     background-color: aquamarine;
     margin-bottom: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2); }
-    .main .div-main .img {
+    .main .div-main .image {
       width: 60px;
       height: 60px;
       margin-bottom: 5px; }
-    .main .div-main .title-main {
+    .main .div-main .name, .main .div-main .country, .main .div-main .login {
       margin-bottom: 5px; }
+  .main .is-friend {
+    background-color: pink; }
 
 /*# sourceMappingURL=main.css.map */
