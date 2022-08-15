@@ -1,10 +1,12 @@
 'use strict';
 
 //6- Obtener elementos del html y asignar a la constante
-const htmlSection = document.querySelector(".section-main");
+const htmlSection = document.querySelector(".section-main")
+const saveData = document.getElementById("save-data")
+const recoverData = document.getElementById("recover-data")
 
 //4- variable que puedo cambiar su valor
-let userList = [];
+let userList = []
 
 //1- Cada vez que arranca la página hay que obtener 10 usuarios al azar llamando a esta API
 const search = () => {
@@ -26,12 +28,12 @@ const search = () => {
                 }
 
                 //5- Añadir usuarios con el formato nuevo al final del array userList
-                userList.push(newUser);
+                userList.push(newUser)
             }
     
-            renderHtml();
+            renderHtml()
 
-            assignEvents();
+            assignEvents()
 
         });
     };
@@ -46,9 +48,9 @@ const getHtmlForUsers = (user) => {
             <h3 class="country">${user.location}</h3>
             <h6 class="login">${user.login}</h6>
         </div>
-    `;
-    return htmlForUsers;
-};
+    `
+    return htmlForUsers
+}
 
 //7- Iterar los valores de userList que tiene el listado de usuarios con el formato nuevo. Por cada iteración usuarioNuevo toma el valor de un usuario con el formato nuevo. Dentro del for of se construye el html para un usuario.
 const renderHtml = () =>{
@@ -67,7 +69,7 @@ const assignEvents = () =>{
     }
 }
 
-search();
+search()
 
 const handleFavorite = (event) => {
     event.preventDefault()
@@ -79,8 +81,26 @@ const handleFavorite = (event) => {
         }
     }
     renderHtml()
-    assignEvents();
+    assignEvents()
 }
+
+const handleSaveData = (event) => {
+    event.preventDefault()
+    localStorage.setItem('user', JSON.stringify(userList));
+}
+
+const handleRecoverData = (event) => {
+    event.preventDefault()
+    userList = JSON.parse(localStorage.getItem('user'))
+    renderHtml()
+    assignEvents()
+}
+
+saveData.addEventListener('click', handleSaveData)
+        
+recoverData.addEventListener('click', handleRecoverData)
+
+
 
 
 
