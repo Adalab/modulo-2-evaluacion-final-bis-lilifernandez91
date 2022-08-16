@@ -136,9 +136,10 @@ table {
     width: 290px;
     display: flex;
     justify-content: end;
-    margin-right: 44px; }
+    margin-right: 44px;
+    color: #005555; }
     .header .twitter-lab-section .h1-header {
-      font-size: 25px;
+      font-size: 35px;
       position: relative;
       bottom: 8px; }
   .header .buttons-section {
@@ -146,11 +147,12 @@ table {
     display: flex;
     flex-direction: column; }
     .header .buttons-section .button {
-      background-color: aquamarine;
-      color: gray;
+      background-color: #005555;
+      color: #f9f9f9;
       border: 1px solid rgba(0, 0, 0, 0.2);
       width: 130px;
-      cursor: pointer; }
+      cursor: pointer;
+      font-size: 15px; }
     .header .buttons-section .button-1 {
       margin-bottom: 5px; }
 
@@ -162,16 +164,21 @@ table {
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: aquamarine;
+    background-color: #069a8e;
     margin-bottom: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2); }
     .main .div-main .image {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 5px; }
-    .main .div-main .name, .main .div-main .country, .main .div-main .login {
-      margin-bottom: 5px; }
+      width: 70px;
+      height: 70px;
+      margin-bottom: 8px; }
+    .main .div-main .name {
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      color: #f9f9f9; }
+    .main .div-main .country, .main .div-main .login {
+      margin-bottom: 5px;
+      color: #f9f9f9; }
   .main .is-friend {
-    background-color: pink; }
+    background-color: #ca4e79; }
 
 /*# sourceMappingURL=main.css.map */

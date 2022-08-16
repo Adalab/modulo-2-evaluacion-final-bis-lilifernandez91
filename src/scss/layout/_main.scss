@@ -7,22 +7,29 @@
     justify-content: center;
     align-items: center;
     height: 150px;
-    background-color: aquamarine;
+    background-color: $color-two;
     margin-bottom: 15px;
     border: 1px solid rgba(0, 0, 0, 0.2);
 
     .image {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 5px;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 8px;
     }
 
-    .name, .country, .login {
+    .name{
       margin-bottom: 5px;
+      text-transform: uppercase;
+      color: $color-one;
+    }
+
+    .country, .login {
+      margin-bottom: 5px;
+      color: $color-one;
     }
   }
 
   .is-friend{
-    background-color: pink;
+    background-color: $color-three;
   }
 }
