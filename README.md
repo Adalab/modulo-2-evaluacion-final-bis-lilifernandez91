@@ -1,33 +1,28 @@
-# modulo-2-evaluacion-final-bis-lilifernandez91
-
 ## Evaluación final, módulo 2, Lilibet Fernández.
 
-## Demo:
+# Red social de amigos
+Esta aplicación de red social nos permite marcar usuarios como amigos y guardarlos en el local storage para su posterior consulta.
 
-## Pasos para arrancar el proyecto:
+1- Instrucciones de instalación
+Para instalar el proyecto, asegúrate de tener instalado npm en tu editor de código preferido. Luego, sigue estos pasos:
 
-```
-npm install
+- Descarga o clona este repositorio en tu máquina local.
+- Abre el proyecto en tu editor de código.
+- Abre la terminal y ejecuta npm install para instalar las dependencias.
+- Ejecuta npm start para iniciar la aplicación.
 
-```
+2- Instrucciones de uso
+- Cada vez que se refresca la página se obtendrán 10 usuarios al azar.
+- Cada usuario estará identificado con su foto, nombre, ciudad y nombre de usuario.
+- Para marcar un usuario como amigo, haz clic en su perfil y se cambiarán los estilos.
+- Para guardar en el local storage el listado de usuarios que se esté mostrando en ese momento en pantalla, haz clic en el botón de la esquina superior derecha llamado "Guardar datos".
+- Para recuperar el listado de usuarios guardado, haz clic en el botón de la esquina superior derecha llamado "Recuperar datos".
 
-## Luego de que todos los paquetes se instalen levantamos el proyecto:
-
-```
-npm start
-
-```
-
-## Aplicación de red social que nos permite marcar usuarios como amigos
-
--Cada vez que se refresca la página se obtendrán 10 usuarios al azar. 
-
--Cada usuario estará identificado con foto, nombre, ciudad y nombre de usuario.
-
--Para marcar un usuario como amigo clickear encima del perfil de usuario y se cambiarán los estilos.
-
--Para guardar en el local storage el listado de usuarios que se esté mostrando en ese momento en pantalla clickear en el botón de la esquina superior derecha llamado: Guardar datos.
-
--Para recuperar el listado de usuarios guardado clickear en el botón de la esquina superior derecha llamado: Recuperar datos.
+¡Gracias por visitar esta aplicación de red social! 
 
 
+
+
+
+
+Regenerate response
