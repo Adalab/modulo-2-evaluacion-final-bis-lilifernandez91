@@ -25,4 +25,3 @@ Para instalar el proyecto, asegúrate de tener instalado npm en tu editor de có
 
 
 
-Regenerate response

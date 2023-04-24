@@ -1,6 +1,6 @@
 'use strict';
 
-//6- Obtener elementos del html y asignar a la constante
+// 6- Obtener elementos del html y asignar a la constante
 const htmlSection = document.querySelector(".section-main")
 const saveData = document.getElementById("save-data")
 const recoverData = document.getElementById("recover-data")
@@ -30,14 +30,14 @@ const search = () => {
                 //5- Añadir usuarios con el formato nuevo al final del array userList
                 userList.push(newUser)
             }
-    
+
             renderHtml()
 
             assignEvents()
 
         });
-    };
-       
+};
+
 //8- Función para pintar un usuario
 const getHtmlForUsers = (user) => {
 
@@ -53,7 +53,7 @@ const getHtmlForUsers = (user) => {
 }
 
 //7- Iterar los valores de userList que tiene el listado de usuarios con el formato nuevo. Por cada iteración usuarioNuevo toma el valor de un usuario con el formato nuevo. Dentro del for of se construye el html para un usuario.
-const renderHtml = () =>{
+const renderHtml = () => {
     htmlSection.innerHTML = ''
 
     for (const userNewFormat of userList) {
@@ -62,7 +62,7 @@ const renderHtml = () =>{
     }
 }
 
-const assignEvents = () =>{
+const assignEvents = () => {
     for (const userNewFormat of userList) {
         const userDiv = document.getElementById(userNewFormat.id)
         userDiv.addEventListener('click', handleFavorite)
@@ -74,9 +74,9 @@ search()
 const handleFavorite = (event) => {
     event.preventDefault()
     const id = event.currentTarget.id
-    
+
     for (const user of userList) {
-        if(user.id === id){
+        if (user.id === id) {
             user.isFriend = !user.isFriend //Lo contrario de lo que estaba anteriormente.
         }
     }
@@ -97,7 +97,7 @@ const handleRecoverData = (event) => {
 }
 
 saveData.addEventListener('click', handleSaveData)
-        
+
 recoverData.addEventListener('click', handleRecoverData)
 
 
